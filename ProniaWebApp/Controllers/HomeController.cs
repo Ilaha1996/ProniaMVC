@@ -25,7 +25,7 @@ namespace ProniaWebApp.Controllers
                     Title = "Home2",
                     SubTitle = "Home2",
                     Description = "Welcome",
-                    Order = 2,
+                    Order = 3,
                     ImageURL = "1-1-524x617.png"
                 },
                 new Slide
@@ -34,7 +34,7 @@ namespace ProniaWebApp.Controllers
                     Title = "Home",
                     SubTitle = "Home",
                     Description = "Hello, welcome Home",
-                    Order = 3,
+                    Order = 2,
                     ImageURL = "1-2-524x617.png"
                 },
 
@@ -42,7 +42,7 @@ namespace ProniaWebApp.Controllers
 
             HomeVM homeVM = new HomeVM 
             { 
-                Slides = slides 
+                Slides = slides.OrderBy(x => x.Order).ToList(),
             }; 
             return View(homeVM);
         }
