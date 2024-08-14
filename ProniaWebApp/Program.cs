@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using ProniaWebApp.DAL;
+
 namespace ProniaWebApp
 {
     public class Program
@@ -6,6 +9,7 @@ namespace ProniaWebApp
         {
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<AppDBContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
             var app = builder.Build();
             app.UseStaticFiles();
