@@ -18,16 +18,16 @@ namespace ProniaWebApp.Controllers
             return View();
         }
 
-        public IActionResult Detail(int? id) 
+        public async Task<IActionResult> Detail(int? id) 
         {
             if (id == null || id <= 0) 
             {
                 return BadRequest();            
             }
 
-            Product product = _context.Products.Include(p=>p.Category)
+            Product? product = await _context.Products.Include(p=>p.Category)
                 .Include(p=>p.ProductImages.OrderByDescending(pi=>pi.IsPrimary))
-                .FirstOrDefault(p => p.Id == id);
+                .FirstOrDefaultAsync(p => p.Id == id);
             
             if (product == null) 
             {
@@ -37,9 +37,10 @@ namespace ProniaWebApp.Controllers
             DetailVM detailVM = new DetailVM 
             { 
                 product = product,
-                products=_context.Products.Where(p=>p.CategoryId==product.CategoryId && p.Id!=id)
+                products=await _context.Products.Where(p=>p.CategoryId==product.CategoryId && p.Id!=id)
                 .Include(p=>p.ProductImages.Where(pi=>pi.IsPrimary!=null))
-                .ToList()
+                .Take(8)
+                .ToListAsync()
             };
 
             return View(detailVM);        
