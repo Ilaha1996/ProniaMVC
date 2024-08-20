@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6C1DE665-0639-4A9B-95A5-67876C40AAAC}|ProniaWebApp\\ProniaWebApp.csproj|c:\\users\\user\\desktop\\proniawebapp\\proniawebapp\\utilities\\extensions\\filevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C1DE665-0639-4A9B-95A5-67876C40AAAC}|ProniaWebApp\\ProniaWebApp.csproj|solutionrelative:proniawebapp\\utilities\\extensions\\filevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C1DE665-0639-4A9B-95A5-67876C40AAAC}|ProniaWebApp\\ProniaWebApp.csproj|c:\\users\\user\\desktop\\proniawebapp\\proniawebapp\\areas\\admin\\controllers\\slidecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C1DE665-0639-4A9B-95A5-67876C40AAAC}|ProniaWebApp\\ProniaWebApp.csproj|solutionrelative:proniawebapp\\areas\\admin\\controllers\\slidecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6C1DE665-0639-4A9B-95A5-67876C40AAAC}|ProniaWebApp\\ProniaWebApp.csproj|c:\\users\\user\\desktop\\proniawebapp\\proniawebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C1DE665-0639-4A9B-95A5-67876C40AAAC}|ProniaWebApp\\ProniaWebApp.csproj|solutionrelative:proniawebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,6 +27,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FileValidator.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\Utilities\\Extensions\\FileValidator.cs",
+              "RelativeDocumentMoniker": "ProniaWebApp\\Utilities\\Extensions\\FileValidator.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\Utilities\\Extensions\\FileValidator.cs",
+              "RelativeToolTip": "ProniaWebApp\\Utilities\\Extensions\\FileValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T06:35:25.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SlideController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\Areas\\Admin\\Controllers\\SlideController.cs",
+              "RelativeDocumentMoniker": "ProniaWebApp\\Areas\\Admin\\Controllers\\SlideController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\Areas\\Admin\\Controllers\\SlideController.cs",
+              "RelativeToolTip": "ProniaWebApp\\Areas\\Admin\\Controllers\\SlideController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T04:53:07.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\Program.cs",
               "RelativeDocumentMoniker": "ProniaWebApp\\Program.cs",
