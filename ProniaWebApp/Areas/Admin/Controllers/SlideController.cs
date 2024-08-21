@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ProniaWebApp.Areas.Admin.ViewModels;
 using ProniaWebApp.DAL;
 using ProniaWebApp.Models;
 using ProniaWebApp.Utilities.Enums;
@@ -33,96 +34,118 @@ namespace ProniaWebApp.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Slide slide)
+        public async Task<IActionResult> Create(CreateSlideVM slideVM)
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    return View();
-            //}
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
 
-            if (!slide.Photo.ValidateType("image/")) 
+            if (!slideVM.Photo.ValidateType("image/")) 
             {
                 ModelState.AddModelError("Photo","File type is not correct");
                 return View();            
             }
 
-            if(!slide.Photo.ValidateSize(FileSizes.MB,2))
+            if(!slideVM.Photo.ValidateSize(FileSizes.MB,2))
             {
                 ModelState.AddModelError("Photo", "File size must be less than 2MB");
                 return View();
-            }
+            }           
 
-           
+            string filename = await slideVM.Photo.CreateFileAsync(_env.WebRootPath,"assets","images","website-images");
 
-            slide.ImageURL = await slide.Photo.CreateFileAsync(_env.WebRootPath,"assets","images","website-images");
-
-            slide.CreatedAt = DateTime.Now;
-
+            Slide slide = new Slide
+            {
+                Title = slideVM.Title,
+                SubTitle=slideVM.SubTitle,
+                Description = slideVM.Description,
+                Order = slideVM.Order,
+                CreatedAt=DateTime.Now,
+                IsDeleted=false,
+                ImageURL=filename
+            };
+            
             await _context.Slides.AddAsync(slide);
             await _context.SaveChangesAsync();
 
             return RedirectToAction("Index");
         }
 
-        //[HttpGet]
-        //public async Task<IActionResult> Update(int? id)
-        //{
-        //    if (id == null || id <= 0) return BadRequest();
+        [HttpGet]
+        public async Task<IActionResult> Update(int? id)
+        {
+            if (id == null || id <= 0) return BadRequest();
 
-        //    Category category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
+            Slide slide = await _context.Slides.FirstOrDefaultAsync(s => s.Id == id);
 
-        //    if (category == null) return NotFound();
+            if (slide == null) return NotFound();
 
-        //    return View(category);
-        //}
+            UpdateSlideVM slideVM = new UpdateSlideVM
+            {
+                ImageURL = slide.ImageURL,
+                Title = slide.Title,
+                SubTitle = slide.SubTitle,
+                Description = slide.Description,
+                Order = slide.Order,
+            };
 
-        //[HttpPost]
-        //public async Task<IActionResult> Update(int? id, Category category)
-        //{
-        //    if (id == null || id <= 0) return BadRequest();
+            return View(slideVM);
+        }
 
-        //    Category existed = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
+        [HttpPost]
+        public async Task<IActionResult> Update(int? id, UpdateSlideVM slideVM)
+        {
+            if(!ModelState.IsValid)  return View(slideVM);
 
-        //    if (existed == null) return NotFound();
+            Slide existed = await _context.Slides.FirstOrDefaultAsync(s=>s.Id==id);
+            if (existed == null) return NotFound();
 
-        //    bool result = await _context.Categories.AnyAsync(c => c.Name == category.Name && c.Id != category.Id);
-        //    if (result)
-        //    {
-        //        ModelState.AddModelError("Name", "Name already exists");
-        //        return View();
+            if(slideVM.Photo is not null)
+            {
+                if (!slideVM.Photo.ValidateType("image/"))
+                {
+                    ModelState.AddModelError("Photo", "File type is not correct");
+                    return View(slideVM);
+                }
 
-        //    }
+                if (!slideVM.Photo.ValidateSize(FileSizes.MB, 2))
+                {
+                    ModelState.AddModelError("Photo", "File size must be less than 2MB");
+                    return View(slideVM);
+                }
 
-        //    existed.Name = category.Name;
+                string filename = await slideVM.Photo.CreateFileAsync(_env.WebRootPath, "assets", "images", "website-images");
+                existed.ImageURL.DeleteFile(_env.WebRootPath, "assets", "images", "website-images");
+                existed.ImageURL=filename;
 
-        //    await _context.SaveChangesAsync();
-        //    return RedirectToAction("Index");
+            }
 
-        //}
+            existed.Title = slideVM.Title;
+            existed.Description = slideVM.Description;
+            existed.SubTitle = slideVM.SubTitle;
+            existed.Order = slideVM.Order;
 
-        //public async Task<IActionResult> Delete(int id)
-        //{
-        //    if (id == null || id <= 0) return BadRequest();
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
 
-        //    Category category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
+        //Hard delete (Soft delete categoryControllerde)
+        public async Task<IActionResult> Delete(int id)
+        {
+            if (id == null || id <= 0) return BadRequest();
 
-        //    if (category == null) return NotFound();
+            Slide slide = await _context.Slides.FirstOrDefaultAsync(s => s.Id == id);
+            if (slide == null) return NotFound();
 
-        //    if (category.IsDeleted)
-        //    {
-        //        category.IsDeleted = false;
-        //    }
-        //    else
-        //    {
-        //        category.IsDeleted = true;
-        //    }
+            slide.ImageURL.DeleteFile(_env.WebRootPath, "assets", "images", "website-images");            
 
-        //    //category.IsDeleted = true;
-        //    await _context.SaveChangesAsync();
+            _context.Slides.Remove(slide);
+            await _context.SaveChangesAsync();
 
-        //    return RedirectToAction("Index");
+            return RedirectToAction("Index");
 
 
-        //}
+        }
     }
 }

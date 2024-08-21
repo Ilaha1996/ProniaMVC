@@ -1,4 +1,4 @@
-﻿@* @model Category
+﻿@model UpdateSlideVM
 
 <div class="main-panel">
     <div class="content-wrapper">
@@ -6,14 +6,38 @@
             <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Update Category</h4>
-                        <form class="forms-sample" method="post">
+                        <h4 class="card-title">Create Category</h4>
+                        <form class="forms-sample" method="post" enctype="multipart/form-data">
                             <div class="form-group">
-                                <label asp-for="Name">Name</label>
-                                <input asp-for="Name" class="form-control" placeholder="Name">
-                                <span class="text-danger" asp-validation-for="Name"></span>
+                               <img style="width:150px;height:150px;" src="~/assets/images/website-images/@Model.ImageURL"/>
+                                <input type="hidden" asp-for="ImageURL" class="form-control" value="@Model.ImageURL">
                             </div>
-                            <button type="submit" class="btn btn-primary me-2">Update</button>
+                            <div class="form-group">
+                                <label asp-for="Photo">Photo</label>
+                                <input asp-for="Photo" class="form-control" placeholder="Photo" accept="image/*">
+                                <span class="text-danger" asp-validation-for="Photo"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Title">Title</label>
+                                <input asp-for="Title" class="form-control" placeholder="Title">
+                                <span class="text-danger" asp-validation-for="Title"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="SubTitle">SubTitle</label>
+                                <input asp-for="SubTitle" class="form-control" placeholder="SubTitle">
+                                <span class="text-danger" asp-validation-for="SubTitle"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Order">Order</label>
+                                <input asp-for="Order" class="form-control" placeholder="Order">
+                                <span class="text-danger" asp-validation-for="Order"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Description">Description</label>
+                                <input asp-for="Description" class="form-control" placeholder="Description">
+                                <span class="text-danger" asp-validation-for="Description"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary me-2">Create</button>
                             <a asp-action="Index" class="btn btn-light">Cancel</a>
                         </form>
                     </div>
@@ -21,4 +45,3 @@
             </div>
         </div>
     </div>
- *@

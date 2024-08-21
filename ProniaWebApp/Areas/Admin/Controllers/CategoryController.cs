@@ -84,6 +84,7 @@ namespace ProniaWebApp.Areas.Admin.Controllers
 
         }
 
+        // Soft Delete (hard delete SliderControllerde)
         public async Task<IActionResult> Delete(int id)
         {
             if (id == null || id <= 0) return BadRequest();

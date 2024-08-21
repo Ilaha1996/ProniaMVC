@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6C1DE665-0639-4A9B-95A5-67876C40AAAC}|ProniaWebApp\\ProniaWebApp.csproj|c:\\users\\user\\desktop\\proniawebapp\\proniawebapp\\utilities\\extensions\\filevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C1DE665-0639-4A9B-95A5-67876C40AAAC}|ProniaWebApp\\ProniaWebApp.csproj|solutionrelative:proniawebapp\\utilities\\extensions\\filevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C1DE665-0639-4A9B-95A5-67876C40AAAC}|ProniaWebApp\\ProniaWebApp.csproj|c:\\users\\user\\desktop\\proniawebapp\\proniawebapp\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C1DE665-0639-4A9B-95A5-67876C40AAAC}|ProniaWebApp\\ProniaWebApp.csproj|solutionrelative:proniawebapp\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C1DE665-0639-4A9B-95A5-67876C40AAAC}|ProniaWebApp\\ProniaWebApp.csproj|c:\\users\\user\\desktop\\proniawebapp\\proniawebapp\\areas\\admin\\controllers\\slidecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C1DE665-0639-4A9B-95A5-67876C40AAAC}|ProniaWebApp\\ProniaWebApp.csproj|solutionrelative:proniawebapp\\areas\\admin\\controllers\\slidecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C1DE665-0639-4A9B-95A5-67876C40AAAC}|ProniaWebApp\\ProniaWebApp.csproj|c:\\users\\user\\desktop\\proniawebapp\\proniawebapp\\areas\\admin\\viewmodels\\product\\updateproductvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C1DE665-0639-4A9B-95A5-67876C40AAAC}|ProniaWebApp\\ProniaWebApp.csproj|solutionrelative:proniawebapp\\areas\\admin\\viewmodels\\product\\updateproductvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C1DE665-0639-4A9B-95A5-67876C40AAAC}|ProniaWebApp\\ProniaWebApp.csproj|c:\\users\\user\\desktop\\proniawebapp\\proniawebapp\\areas\\admin\\views\\product\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C1DE665-0639-4A9B-95A5-67876C40AAAC}|ProniaWebApp\\ProniaWebApp.csproj|solutionrelative:proniawebapp\\areas\\admin\\views\\product\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6C1DE665-0639-4A9B-95A5-67876C40AAAC}|ProniaWebApp\\ProniaWebApp.csproj|c:\\users\\user\\desktop\\proniawebapp\\proniawebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,37 +26,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FileValidator.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\Utilities\\Extensions\\FileValidator.cs",
-              "RelativeDocumentMoniker": "ProniaWebApp\\Utilities\\Extensions\\FileValidator.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\Utilities\\Extensions\\FileValidator.cs",
-              "RelativeToolTip": "ProniaWebApp\\Utilities\\Extensions\\FileValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T06:35:25.91Z",
+              "DocumentIndex": 2,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\Areas\\Admin\\Views\\Product\\Update.cshtml",
+              "RelativeDocumentMoniker": "ProniaWebApp\\Areas\\Admin\\Views\\Product\\Update.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\Areas\\Admin\\Views\\Product\\Update.cshtml",
+              "RelativeToolTip": "ProniaWebApp\\Areas\\Admin\\Views\\Product\\Update.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-21T07:46:53.356Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SlideController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\Areas\\Admin\\Controllers\\SlideController.cs",
-              "RelativeDocumentMoniker": "ProniaWebApp\\Areas\\Admin\\Controllers\\SlideController.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\Areas\\Admin\\Controllers\\SlideController.cs",
-              "RelativeToolTip": "ProniaWebApp\\Areas\\Admin\\Controllers\\SlideController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAArAAAA",
+              "Title": "UpdateProductVM.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\Areas\\Admin\\ViewModels\\Product\\UpdateProductVM.cs",
+              "RelativeDocumentMoniker": "ProniaWebApp\\Areas\\Admin\\ViewModels\\Product\\UpdateProductVM.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\Areas\\Admin\\ViewModels\\Product\\UpdateProductVM.cs",
+              "RelativeToolTip": "ProniaWebApp\\Areas\\Admin\\ViewModels\\Product\\UpdateProductVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T04:53:07.447Z",
+              "WhenOpened": "2024-08-21T07:43:10.068Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ProniaWebApp\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ProniaWebApp\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAAHIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T05:57:42.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\Program.cs",
               "RelativeDocumentMoniker": "ProniaWebApp\\Program.cs",

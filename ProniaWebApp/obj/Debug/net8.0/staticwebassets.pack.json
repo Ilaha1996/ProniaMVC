@@ -789,10 +789,6 @@
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\1-1-310x220.jpg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\wwwroot\\assets\\images\\website-images\\1-1-524x617.png",
-      "PackagePath": "staticwebassets\\assets\\images\\website-images\\1-1-524x617.png"
-    },
-    {
       "Id": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\wwwroot\\assets\\images\\website-images\\1-1-570x633.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\1-1-570x633.jpg"
     },
@@ -843,10 +839,6 @@
     {
       "Id": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\wwwroot\\assets\\images\\website-images\\1-2-370x300.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\1-2-370x300.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\wwwroot\\assets\\images\\website-images\\1-2-524x617.png",
-      "PackagePath": "staticwebassets\\assets\\images\\website-images\\1-2-524x617.png"
     },
     {
       "Id": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\wwwroot\\assets\\images\\website-images\\1-2-570x633.jpg",
@@ -957,14 +949,6 @@
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\3.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\wwwroot\\assets\\images\\website-images\\84bbc7d8-4203-462b-8703-d81a19bff07cScreenshot 2024-05-15 115212.png",
-      "PackagePath": "staticwebassets\\assets\\images\\website-images\\84bbc7d8-4203-462b-8703-d81a19bff07cScreenshot 2024-05-15 115212.png"
-    },
-    {
-      "Id": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\wwwroot\\assets\\images\\website-images\\98f7f09c-9a5b-46b9-8fdd-a0cdabcdbc39Screenshot 2023-07-11 102634.png",
-      "PackagePath": "staticwebassets\\assets\\images\\website-images\\98f7f09c-9a5b-46b9-8fdd-a0cdabcdbc39Screenshot 2023-07-11 102634.png"
-    },
-    {
       "Id": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\wwwroot\\assets\\images\\website-images\\car.png",
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\car.png"
     },
@@ -975,6 +959,10 @@
     {
       "Id": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\wwwroot\\assets\\images\\website-images\\dark.png",
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\dark.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\wwwroot\\assets\\images\\website-images\\ebcd5439-5929-41e5-8eda-1e1f79d1808dULI_4296.JPG",
+      "PackagePath": "staticwebassets\\assets\\images\\website-images\\ebcd5439-5929-41e5-8eda-1e1f79d1808dULI_4296.JPG"
     },
     {
       "Id": "C:\\Users\\USER\\Desktop\\ProniaWebApp\\ProniaWebApp\\wwwroot\\assets\\images\\website-images\\quotation.png",
