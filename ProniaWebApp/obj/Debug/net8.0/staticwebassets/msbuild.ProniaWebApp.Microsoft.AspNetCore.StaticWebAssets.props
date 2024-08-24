@@ -3680,6 +3680,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\1.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\160472a6-ad4c-4ccd-85f2-7fef362cb2561-1-120x120.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProniaWebApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProniaWebApp</BasePath>
+      <RelativePath>assets/images/website-images/160472a6-ad4c-4ccd-85f2-7fef362cb2561-1-120x120.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\160472a6-ad4c-4ccd-85f2-7fef362cb2561-1-120x120.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\2-1-370x270.webp))">
       <SourceType>Package</SourceType>
       <SourceId>ProniaWebApp</SourceId>
@@ -3792,6 +3808,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\3.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\355b4b47-be9b-4b54-bcb6-119b71a494f61-2-310x220.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProniaWebApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProniaWebApp</BasePath>
+      <RelativePath>assets/images/website-images/355b4b47-be9b-4b54-bcb6-119b71a494f61-2-310x220.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\355b4b47-be9b-4b54-bcb6-119b71a494f61-2-310x220.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\4985ae18-bcd4-49cd-b0bf-654867a49f931--1rnu4p.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProniaWebApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProniaWebApp</BasePath>
+      <RelativePath>assets/images/website-images/4985ae18-bcd4-49cd-b0bf-654867a49f931--1rnu4p.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\4985ae18-bcd4-49cd-b0bf-654867a49f931--1rnu4p.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\8a1eb0d2-6682-47b2-af99-38975a9619a91-1-120x120.webp))">
       <SourceType>Package</SourceType>
       <SourceId>ProniaWebApp</SourceId>
@@ -3808,6 +3856,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\8a1eb0d2-6682-47b2-af99-38975a9619a91-1-120x120.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\902b098c-1684-4125-928d-e1d80fc640aa1-2-370x300.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProniaWebApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProniaWebApp</BasePath>
+      <RelativePath>assets/images/website-images/902b098c-1684-4125-928d-e1d80fc640aa1-2-370x300.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\902b098c-1684-4125-928d-e1d80fc640aa1-2-370x300.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\98223c93-10dc-4037-b118-ceb86a05ff571-3-120x120.webp))">
       <SourceType>Package</SourceType>
       <SourceId>ProniaWebApp</SourceId>
@@ -3823,6 +3887,54 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\98223c93-10dc-4037-b118-ceb86a05ff571-3-120x120.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\a0c0e2f1-2f6e-4eb3-94c1-41f57bbd39b71-1.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProniaWebApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProniaWebApp</BasePath>
+      <RelativePath>assets/images/website-images/a0c0e2f1-2f6e-4eb3-94c1-41f57bbd39b71-1.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\a0c0e2f1-2f6e-4eb3-94c1-41f57bbd39b71-1.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\a38c34c3-c24c-4c9b-9216-c604986564871-2-570x633.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProniaWebApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProniaWebApp</BasePath>
+      <RelativePath>assets/images/website-images/a38c34c3-c24c-4c9b-9216-c604986564871-2-570x633.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\a38c34c3-c24c-4c9b-9216-c604986564871-2-570x633.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\c3b9de86-df9b-4389-bd27-33285706b8101-1-120x120.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProniaWebApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProniaWebApp</BasePath>
+      <RelativePath>assets/images/website-images/c3b9de86-df9b-4389-bd27-33285706b8101-1-120x120.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\c3b9de86-df9b-4389-bd27-33285706b8101-1-120x120.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\car.png))">
       <SourceType>Package</SourceType>
@@ -3871,6 +3983,38 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\dark.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\f0b20c16-8798-4cc0-9052-4f5f2166a5221-3.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProniaWebApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProniaWebApp</BasePath>
+      <RelativePath>assets/images/website-images/f0b20c16-8798-4cc0-9052-4f5f2166a5221-3.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\f0b20c16-8798-4cc0-9052-4f5f2166a5221-3.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\fc73a6b1-50ca-4153-9e6d-aa4f0fce051e1-1-310x220.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProniaWebApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProniaWebApp</BasePath>
+      <RelativePath>assets/images/website-images/fc73a6b1-50ca-4153-9e6d-aa4f0fce051e1-1-310x220.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\fc73a6b1-50ca-4153-9e6d-aa4f0fce051e1-1-310x220.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\website-images\quotation.png))">
       <SourceType>Package</SourceType>

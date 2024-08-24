@@ -1,4 +1,8 @@
 ﻿@model UpdateProductVM
+@{
+    ProductImage main = Model.Images.FirstOrDefault(i => i.IsPrimary == true);
+    ProductImage hover = Model.Images.FirstOrDefault(i => i.IsPrimary == false);
+}
 
 <div class="main-panel">
     <div class="content-wrapper">
@@ -6,13 +10,44 @@
             <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Update Category</h4>
+                        <h4 class="card-title">Update Product</h4>
                         <form class="forms-sample" method="post" enctype="multipart/form-data">
                             @*  <div class="form-group">
                             <label asp-for="Photo">Photo</label>
                             <input asp-for="Photo" class="form-control" placeholder="Photo" accept="image/*">
                             <span class="text-danger" asp-validation-for="Photo"></span>
                             </div> *@
+                            <div class="form-group">
+                                <img style="width:150px;height:150px" src="~/assets/images/website-images/@main.ImageURL" />
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="MainPhoto">Main Photo</label>
+                                <input asp-for="MainPhoto" class="form-control" placeholder="MainPhoto">
+                                <span class="text-danger" asp-validation-for="MainPhoto"></span>
+                            </div>
+                            <div class="form-group">
+                                <img style="width:150px;height:150px" src="~/assets/images/website-images/@hover.ImageURL" />
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="HoverPhoto">Hover Photo</label>
+                                <input asp-for="HoverPhoto" class="form-control" placeholder="HoverPhoto">
+                                <span class="text-danger" asp-validation-for="HoverPhoto"></span>
+                            </div>
+                            <div class="form-group d-flex">
+                                @foreach (ProductImage image in Model.Images.Where(i=>i.IsPrimary==null))
+                                {
+                                    <div class="position-relative" >
+                                        <img style="width:150px;height:150px" src="~/assets/images/website-images/@image.ImageURL" />
+                                        <button type="button" style="right:1px; top:1px" class="cus-delete btn btn-danger position-absolute">X</button>
+                                        <input type="hidden" asp-for="ImageIds" value="@image.Id" class="form-control">                              
+                                    </div>                                   
+                                }                              
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Photos">Additional Photos</label>
+                                <input asp-for="Photos" class="form-control" placeholder="Photos">
+                                <span class="text-danger" asp-validation-for="Photos"></span>
+                            </div>
                             <div class="form-group">
                                 <label asp-for="Name">Name</label>
                                 <input asp-for="Name" class="form-control" placeholder="Name">
@@ -32,22 +67,20 @@
                                 <label asp-for="CategoryId">Category</label>
                                 <select asp-for="CategoryId" class="form-control" asp-items="new SelectList(Model.Categories,nameof(Category.Id),nameof(Category.Name))">
                                   </select>
-                                @*                                 <select asp-for="CategoryId" class="form-control">
-                                <option disabled selected>Select Category</option>
-                                @foreach (var category in Model.Categories)
-                                {
-                                <option value="@category.Id">@category.Name</option>
-                                }
-                                </select> *@
-
                                 <span class="text-danger" asp-validation-for="CategoryId"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="CategoryId">Tag</label>
+                                <select asp-for="TagIds" class="form-control" asp-items="new SelectList(Model.Tags,nameof(Tag.Id),nameof(Tag.Name))">
+                                </select>
+                                <span class="text-danger" asp-validation-for="TagIds"></span>
                             </div>
                             <div class="form-group">
                                 <label asp-for="Description">Description</label>
                                 <input asp-for="Description" class="form-control" placeholder="Description">
                                 <span class="text-danger" asp-validation-for="Description"></span>
                             </div>
-                            <button type="submit" class="btn btn-primary me-2">Create</button>
+                            <button type="submit" class="btn btn-primary me-2">Update</button>
                             <a asp-action="Index" class="btn btn-light">Cancel</a>
                         </form>
                     </div>
@@ -55,4 +88,15 @@
             </div>
         </div>
     </div>
+
+    @section DeleteImage{
+        <script>
+            var btns = document.querySelectorAll(".cus-delete")
+            for (let i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    btns[i].parentElement.remove()
+                });
+            };
+        </script>
+    }
 

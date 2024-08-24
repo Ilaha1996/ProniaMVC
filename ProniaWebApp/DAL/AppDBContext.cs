@@ -6,6 +6,7 @@ namespace ProniaWebApp.DAL
     public class AppDBContext:DbContext
     {
         public AppDBContext(DbContextOptions<AppDBContext>options):base(options) { }
+
         public DbSet<Slide> Slides { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
@@ -14,6 +15,7 @@ namespace ProniaWebApp.DAL
         public DbSet<Tag> Tags { get; set; }
         public DbSet<ProductTag> ProductTags { get; set; }
         public DbSet<Size> Sizes { get; set; }
+        public DbSet<Setting> Settings { get; set; }
 
     }
 }
